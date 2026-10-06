@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1> My Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+    <h2>Contact Us</h2>
+    <p>Please fill out this form, and we will contact you as soon as possible.</p>
+
+    <form action="#" method="POST">
+        <!-- Full Name -->
+        <label for="fullName">Full Name *</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="menna mohamed" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address *</label><br>
+        <input type="email" id="email" name="email" placeholder="menna@example.com" required><br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone / whatsapp number*</label><br>
+        <input type="number" id="phone" name="phone" placeholder="0123456789" required><br><br>
+
+        <!-- Date -->
+        <label for="date">Preferred response Date</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!-- Select -->
+        <label for="dept">Department*</label><br>
+        <select id="dept" name="dept">
+            <option value="">-- Select a Department --</option>
+            <option value="general inquiry">General inquiry</option>
+            <option value="technical support">Technical support</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <input type="radio" id="emailMethod" name="method" value="email">
+            <label for="emailMethod">Email</label>
+            
+            <input type="radio" id="phoneMethod" name="method" value="phone">
+            <label for="phoneMethod">Phone Call</label>
+            
+            <input type="radio" id="WhatsAppMethod" name="method" value="WhatsApp">
+            <label for="WhatsAppMethod">whatsApp</label>
+        </fieldset><br>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Services of Interest</legend>
+            <input type="checkbox" id="c1"><label for="c1">Ai & Machine learning</label>
+            <input type="checkbox" id="c2"><label for="c2">Web Development</label>
+            <input type="checkbox" id="c3"><label for="c3">Backend</label>
+            <input type="checkbox" id="c4"><label for="c4">Subscribe to Newsletter</label>
+        </fieldset><br>
+
+        <!-- Textarea -->
+        <label for="msg">Message (Details) *</label><br>
+        <textarea id="msg" name="msg" placeholder="Type your message here..."></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Send the Message</button>
+    </form>
+</main>
+ <footer>
+        <p>&copy; 2026 My Blog</p>
+    </footer>
+</body>
+</html>
+   
